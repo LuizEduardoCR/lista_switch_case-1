@@ -5,10 +5,18 @@
     */
 
     //ENTRADA
-
+    const num = parseFloat(prompt("Informe um nuumero").trim().replace(",","."));
     
     //PROCESSAMENTO
-
+    switch (num % 2) {
+        case 0:
+            document.write("É par");
+            break;
+    
+        default:
+            document.write("É impar")
+            break;
+    }
     
     //SAÍDA
 
