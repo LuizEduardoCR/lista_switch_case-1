@@ -8,9 +8,33 @@
     // - cães grandes: fator 7.
 
     // ENTRADA
+    const porte = prompt ("Insira o porte do cão Digite G para grande, M para médio e P para pequeno.").toUpperCase();
+    const idade = Number(prompt("insira a idade do seu cão:"));
+
+    // PROCESSAMENTO
+    let bill
+    switch (porte) {
+        case "p":
+        bill = idade*5
+            alert (`a idade do seu cão é ${bill}` )
+            break;
+    
+        case "m":
+        bill = idade*6
+            alert (`a idade do seu cão é ${bill}` )
+            break;
+   
+        case "g":
+        bill = idade*7
+            alert (`a idade do seu cão é ${bill}` )
+            break;
+
+        default:
+            alert("dados inválidos!")
+            break;
+    }
 
     
-    // PROCESSAMENTO
 
     
     // SAÍDA
